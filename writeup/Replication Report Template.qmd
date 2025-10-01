@@ -1,6 +1,6 @@
 ---
-title: "Replication of Study X by Sample & Sample (20xx, Psychological Science)"
-author: "Replication Author[s] (contact information)"
+title: "Replication of Foundations of intuitive power analyses in children and adults by Pelz et al., 2022 (2022, Nature Human Behaviour)"
+author: "Sophie Mazor (smazor@ucsd.edu)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
   html:
