@@ -24,13 +24,13 @@ tolerance. Instead of examining whether or not people are sensitive to the amoun
 individual is willing to have present when committing to a decision. Though this particular result shows a group level sensitivity to conducting an 
 “intuitive power analysis,” it helps to inform my current work on behavior at the individual level. 
 	
-	This study broadly investigates whether children and adults can intuitively perform a power analysis (i.e., whether people are sensitive to the 
+This study broadly investigates whether children and adults can intuitively perform a power analysis (i.e., whether people are sensitive to the 
 amount of evidence needed in order to make a particular inference or decision). In order to answer this question, participants are shown 10 pairs of 
 boxes, each pair containing a different distribution of colored balls. There are 10 separate test trials, each displaying two boxes filled with 
 colored balls with inverse proportions of one another (e.g., 95/5 vs. 5/95). The difficulty of the trials vary from 51/49 to 95/5, with the order 
 randomized for each participant. On each trial, participants are shown two boxes, each belonging to a different character. They must enter a number for how many balls should be taken out of the boxes in order for them to determine which of the two boxes is being sampled. They measure whether participants adjust their sampling behavior as distributions get harder/easier to discriminate. 
 	
-	The primary challenge will be to redesign each of the stimuli, as there are 10 separate trials, with 200 visible balls across the two boxes per 
+The primary challenge will be to redesign each of the stimuli, as there are 10 separate trials, with 200 visible balls across the two boxes per 
 trial. Each trial has its own color scheme of balls inside, and it will be time consuming to replicate the boxes exactly as they appear in the 
 original paper. The rest of the procedure should be fairly simple to recreate in terms of design.  
 
