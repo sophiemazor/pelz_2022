@@ -32,6 +32,10 @@ of the boxes in order to determine which of the two boxes is being sampled.
 trial. Each trial has its own color scheme of balls inside, and it will be time consuming to replicate the boxes exactly as they appear in the 
 original paper. The rest of the procedure should be fairly simple to recreate in terms of design.  
 
+Repository: https://github.com/sophiemazor/pelz2022.git 
+Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8bf75fb235c6bac3622d63d/original_paper
+
+
 
 ## Methods
 
