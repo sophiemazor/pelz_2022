@@ -43,20 +43,28 @@ Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8b
 ## Methods
 
 ### Power Analysis
-
 Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
+
+The paper reports using G*Power to conduct a power analysis. They found that in order to get an effect size of 0.4 achieve a power level of 0.9 (90%), they needed 30 adult participants. Because this replication study will be conducted on an online platform, this planned sample size is extremely feasible.
 
 ### Planned Sample
 
 Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
+The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail one or more attention check questions throughout the task and must be at leat 18 years old in order to participate. There are no other eligibility criteria. 
 
 ### Materials
-
 All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+All stimuli will be created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1, participants will first see two boxes with inverse proportions of balls (i.e., 72/28, 28/72). There will be ten separate test trials and each will show participants two boxes, one belonging to the "narrator" and one to a "character." Boxes will contain proportions of balls with distributions that range in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). 
 
 ### Procedure	
-
 Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
+Training Trial
+Procedure for the training trial will directly follow that of the original paper: "Adults were shown a short animation that walked them through the setup of the task, in which images of two boxes of balls with inverse proportions were shown being shuffled behind a barrier so the location of each was unknown. Then a hand reached into one of the boxes and picked balls one at a time and placed them into an opaque bowl without revealing the colour of each ball. After the container was filled, the contents were revealed and participants were asked to judge which of the two boxes the sample had been drawn from. The training trial was done with a 72/28 ratio set, and was designed to be an easy discrimination. Failure to choose the correct box was used as an exclusion criterion". 
+The paper does not specify the number of balls drawn during this trial, however participants in the replication will view 11 balls. 8 of them (72%) will be in the majority color and 3 (28%) will be in the minority color in order to directly reflect the distribution of the box being sampled.
+
+Test Trials
+The procedure for each of the 10 test trials will be identical to the original paper: "Participants were then shown four characters, each with a set of two boxes, to give them a sense of the range of contrasts in the task and were told ‘This time, you will be deciding how many balls I should put in the bowl. For each friend, think about how tricky it will be to figure out which box I am picking from. For some friends you might need more balls to decide which box they are picked from, and for some friends you might need fewer. Try not to ask for more balls than you need.’ Ten sets of boxes each with a new character were presented one at a time, along with a question asking ‘How many balls do you think I need to put in the bowl for you to know whether the balls came from my box or (the current character)’s box?’ Participants simply had to type in the number of samples that they thought they would need to discriminate each pair. The proportions in the test stimuli varied from very easy discriminations (95/5) to very difficult ones (51/49). Adults were not told the specific ratios; they had to estimate the difficulty of the discrimination problem from the visual display. Nor were adults told the exact number of balls in the box. One hundred balls  were visible on the face of the box but the boxes were presented as three-dimensional sketches so, assuming participants thought the boxes were cubes, they might have inferred that there were roughly 1,000 balls in each box. The instructions indicated sampling without replacement and in principle this could be modelled by a hypergeometric distribution (that is, the probability of a coloured ball would change after each draw). However, given the inferred size of the population, sampling with or without replacement would make little difference thus for simplicity, we modelled the probability of drawing a coloured ball as a binomial distribution. Participants were not given any feedback on their responses and the order in which the ten boxes were presented was randomized for each participant."
+
 
 ### Analysis Plan
 
