@@ -99,6 +99,7 @@ You can comment this section out prior to final report with data collection.
 ### Data preparation
 
 Data preparation following the analysis plan.
+Because each of my measures will be identical to that of the original experiment, my data preparation will be the same as they did. Step one of my data preparation will be to account for exclusions. There is one attention check at the end of the familiarization trial. The original experiment excluded participants if they failed this question, and I will do the same. The key measures that will be used in the linear mixed effects model will be the exact answers participants answer to each of the ten test trials (i.e., a numberical value for the number of samples participants think should be drawn). In order to prepare the data, I will make the dataframe into long form, such that participants have multiple rows, one for each individual trial. 
 	
 ```{r include=F}
 ### Data Preparation
@@ -115,7 +116,7 @@ Data preparation following the analysis plan.
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.  
-I will run a linear mixed effects model with trial proportions as a fixed effect, and participants as a random intercept. Using the model, I will use likelihood ratio tests, comparing the model to the null model (as specified above in the analysis plan) to assess significance. This statistical output will directly examine whether or not participants' sampling behaviors differ with distribution difficulty, so I believe it to be a well-suited analysis for the purposes of this replication. I will also aim to recreate the original graph for this as well. 
+I will run a linear mixed effects model with trial proportions as a fixed effect and participants as a random intercept. Using the model, I will use likelihood ratio tests, comparing the LMM to the null model (as specified above in the analysis plan) to assess significance. This statistical output will directly examine whether or not participants' sampling behaviors differ with distribution difficulty, so I believe it to be a well-suited analysis for the purposes of this replication. I will also aim to recreate the original graph for this as well. 
 
 *Side-by-side graph with original graph is ideal here*
 ![Original Paper's Graph](https://github.com/sophiemazor/pelz2022/blob/main/Pelz_Original%20Graph.png)
