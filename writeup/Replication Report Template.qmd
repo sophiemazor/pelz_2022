@@ -72,9 +72,15 @@ Can also quote directly, though it is less often spelled out effectively for an 
 
 **Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
 
+I plan to conduct the key analysis from Experiment 1 and I will follow their analysis steps directly. 
+First, they identified a null model, which they reach by "model(ing) an agent who represents all of the possible contents of a sample of a particular size N (for example, in a sample of N = 3 balls, it could contain three white balls, three coloured balls, one white and two coloured balls, or two white and one coloured ball), then weights them on the basis of the likelihood of drawing that particular sample from the population. We then use a cumulative distribution function to model the sampling process, with N being the total number of samples drawn (restricted to even-numbered samples using a ceiling operator), x representing the number of samples that are coloured and p representing the probability that a given sample is a particular colour (that is, the probability associated with a given box). When most of the possible samples of a given size point to one of the two options, then participants should decide the sample is big enough; if not, then participants should request a larger sample."
+After data collection, I will use a linear mixed effects model to examine participants' sampling behavior as it relates to distribution difficulty. As listed in the paper, I will make the "proportion of coloured balls a fixed effect, with participant as a random intercept. P values were obtained by likelihood ratio tests comparing the full model with a null model that left out the effect of proportion."
+
 ### Differences from Original Study
 
 Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
+
+The original study was run online via Amazon's Mechanical Turk. This replication will either be run with undergraduates though a university research survey platform or via prolific. The exact procedure should be nearly identical to the original study, with possible modifications to the number of samples extracted during the training trials. However, it is unlikely that these differences should have an impact on the claims made in the original article.
 
 ### Methods Addendum (Post Data Collection)
 
