@@ -50,7 +50,7 @@ The paper reports using G*Power to conduct a power analysis. They found that in 
 ### Planned Sample
 
 Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
-The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail one or more attention check questions throughout the task and must be at leat 18 years old in order to participate. There are no other eligibility criteria. 
+The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail the attention check question and must be at least 18 years old in order to participate. There are no other eligibility criteria. 
 
 ### Materials
 All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
