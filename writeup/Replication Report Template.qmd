@@ -115,6 +115,10 @@ Data preparation following the analysis plan.
 ### Confirmatory analysis
 
 The analyses as specified in the analysis plan.  
+I will run a linear mixed effects model with trial proportions as a fixed effect, and participants as a random intercept. Using the model, I will use likelihood ratio tests, comparing the model to the null model (as specified above in the analysis plan) to assess significance. This statistical output will directly examine whether or not participants' sampling behaviors differ with distribution difficulty, so I believe it to be a well-suited analysis for the purposes of this replication. I will also aim to recreate the original graph for this as well. 
+
+![Original Paper's Graph](Pelz_Original Graph.png)
+
 
 *Side-by-side graph with original graph is ideal here*
 
