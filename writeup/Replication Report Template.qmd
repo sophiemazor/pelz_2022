@@ -45,7 +45,7 @@ Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8b
 ### Power Analysis
 Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
 
-The paper reports using G*Power to conduct a power analysis. They found that in order to get an effect size of 0.4 achieve a power level of 0.9 (90%), they needed 30 adult participants. Because this replication study will be conducted on an online platform, this planned sample size is extremely feasible.
+The paper reports using G*Power to conduct a power analysis based on pilot data. They found that in order to get an effect size of 0.4 achieve a power level of 0.9 (90%), they needed 30 adult participants. Because this replication study will be conducted on an online platform, this planned sample size is feasible. 
 
 ### Planned Sample
 
