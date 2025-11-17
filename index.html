@@ -84,7 +84,7 @@
     var study_id = jsPsych.data.getURLVariable('STUDY_ID') || null;
     var session_id = jsPsych.data.getURLVariable('SESSION_ID') || null;
     var subject_id = jsPsych.randomization.randomID(10);
-    var prolific_last_4 = prolific_id.slice(-4) || "NA";
+    var prolific_last_4 = prolific_id ? prolific_id.slice(-4) : "NA";
 
     jsPsych.data.addProperties({
         subject_id: subject_id,
