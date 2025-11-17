@@ -82,19 +82,19 @@
     // capture info from Prolific
 // capture info from Prolific
   //var subject_id = jsPsych.data.getURLVariable('PROLIFIC_PID'); do not capture prolific PID yet
-  var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID') || null;
-  var study_id = jsPsych.data.getURLVariable('STUDY_ID') || null;
-  var session_id = jsPsych.data.getURLVariable('SESSION_ID') || null;
-  var subject_id = jsPsych.randomization.randomID(10);
+ /// var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID') || null;
+ // var study_id = jsPsych.data.getURLVariable('STUDY_ID') || null;
+ // var session_id = jsPsych.data.getURLVariable('SESSION_ID') || null;
+ // var subject_id = jsPsych.randomization.randomID(10);
   //var prolific_id_last4 = prolific_id ? prolific_id.slice(-4) : "NA";
     
-  jsPsych.data.addProperties({
-    prolific_id_last4: 'test',
-    study_id: study_id,
-    session_id: session_id
-  });
+//  jsPsych.data.addProperties({
+//    prolific_id_last4: 'test',
+//    study_id: study_id,
+//    session_id: session_id
+//  });
 
-    const filename = `${subject_id}.csv`;
+//    const filename = `${subject_id}.csv`;
 
 
     // Map each test image to its prompt
@@ -125,6 +125,22 @@
     };
     timeline.push(preload);
 
+    window.onload = function() {
+                // get prolific ID from URL parameter
+                const urlParams = new URLSearchParams(window.location.search);
+                const prolific_pid = urlParams.get(‘PROLIFIC_PID’) || null;
+                const study_id = urlParams.get(‘STUDY_ID’) || null;
+                const session_id = urlParams.get(‘SESSION_ID’) || null;
+                participant_id = prolific_pid || ‘debug_’ + Date.now();
+        }
+                
+  jsPsych.data.addProperties({
+    prolific_id_last4: 'test',
+    study_id: study_id,
+    session_id: session_id
+  });
+
+    const filename = `${participant_id}.csv`;
     // consent screen
     const consent = {
         type: jsPsychHtmlButtonResponse,
