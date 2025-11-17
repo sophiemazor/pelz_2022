@@ -85,12 +85,14 @@
     var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
     var study_id = jsPsych.data.getURLVariable('STUDY_ID');
     var session_id = jsPsych.data.getURLVariable('SESSION_ID');
+    var prolific_last_4 = prolific_id.slice(-4);
     var subject_id = jsPsych.randomization.randomID(10);
 
     jsPsych.data.addProperties({
         subject_id: subject_id,
         study_id: study_id,
-        session_id: session_id
+        session_id: session_id,
+        prolific_last_4: prolific_last_4
     });
 
 
@@ -527,7 +529,7 @@
     const end_screen = {
         type: jsPsychHtmlKeyboardResponse,
         stimulus: `<p>You've finished the task. Thanks for participating!</p>
-    <p><a href="https://app.prolific.com/submissions/complete?cc=C1NFIWT9">Click here to return to Prolific and complete the study</a>.</p>`,
+    <p><a href= "https://app.prolific.com/submissions/complete?cc=C1NFIWT9" >Click here to return to Prolific and complete the study</a>.</p>`,
         choices: "NO_KEYS"
     };
 
