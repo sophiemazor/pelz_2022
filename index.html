@@ -80,11 +80,11 @@
     const catch_trial_images = ['images/catch_left.png', 'images/catch_right.png'];
 
     // capture info from Prolific
-    var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID');
-    var study_id = jsPsych.data.getURLVariable('STUDY_ID');
-    var session_id = jsPsych.data.getURLVariable('SESSION_ID');
-    var prolific_last_4 = prolific_id.slice(-4);
+    var prolific_id = jsPsych.data.getURLVariable('PROLIFIC_PID') || null;
+    var study_id = jsPsych.data.getURLVariable('STUDY_ID') || null;
+    var session_id = jsPsych.data.getURLVariable('SESSION_ID') || null;
     var subject_id = jsPsych.randomization.randomID(10);
+    var prolific_last_4 = prolific_id.slice(-4) : "NA";
 
     jsPsych.data.addProperties({
         subject_id: subject_id,
