@@ -125,14 +125,20 @@
     };
     timeline.push(preload);
 
-    window.onload = function() {
-                // get prolific ID from URL parameter
-                const urlParams = new URLSearchParams(window.location.search);
-                const prolific_pid = urlParams.get(‘PROLIFIC_PID’) || null;
-                const study_id = urlParams.get(‘STUDY_ID’) || null;
-                const session_id = urlParams.get(‘SESSION_ID’) || null;
-                participant_id = prolific_pid || ‘debug_’ + Date.now();
-        }
+let prolific_pid = null;
+let study_id = null;
+let session_id = null;
+let participant_id = null;
+
+window.onload = function() {
+    const urlParams = new URLSearchParams(window.location.search);
+
+    prolific_pid = urlParams.get('PROLIFIC_PID') || null;
+    study_id = urlParams.get('STUDY_ID') || null;
+    session_id = urlParams.get('SESSION_ID') || null;
+
+    participant_id = prolific_pid || 'debug_' + Date.now();
+};
                 
   jsPsych.data.addProperties({
     prolific_id_last4: 'test',
