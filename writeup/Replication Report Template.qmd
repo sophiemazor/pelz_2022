@@ -34,7 +34,7 @@ The primary challenge will be to redesign each of the stimuli, as there are 10 s
 trial. Each trial has its own color scheme of balls inside, and it will be time consuming to replicate the boxes exactly as they appear in the 
 original paper. The rest of the procedure should be fairly simple to recreate in terms of design.  
 
-Repository: https://github.com/sophiemazor/pelz2022.git 
+Repository: https://github.com/psyc-201/pelz_2022
 
 Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8bf75fb235c6bac3622d63d/original_paper
 
@@ -43,22 +43,15 @@ Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8b
 ## Methods
 
 ### Power Analysis
-Original effect size, power analysis for samples to achieve 80%, 90%, 95% power to detect that effect size.  Considerations of feasibility for selecting planned sample size.
-
 The paper reports using G*Power to conduct a power analysis based on pilot data. They found that in order to get an effect size of 0.4 achieve a power level of 0.9 (90%), they needed 30 adult participants. Because this replication study will be conducted on an online platform, this planned sample size is feasible. 
 
 ### Planned Sample
-
-Planned sample size and/or termination rule, sampling frame, known demographics if any, preselection rules if any.
 The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail the attention check question and must be at least 18 years old in order to participate. There are no other eligibility criteria. 
 
 ### Materials
-All materials - can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
-
-All stimuli will be created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1, participants will first see two boxes with inverse proportions of balls (i.e., 72/28, 28/72) in a training trial. There will be ten separate test trials and each will show participants two boxes, one belonging to the "narrator" and one to a "character." Boxes will contain proportions of balls with distributions that range in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). Because I will be recreating the stimuli on my own, I will use the same colors as in the original paper. The positions of each colored ball may differ slightly, but the proportions/numbers of each color will be exactly the same.
+All stimuli will be created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1, participants will first see two boxes with inverse proportions of balls (i.e., 72/28, 28/72) in a training trial. There will be ten separate test trials and each will show participants two boxes, one belonging to the "narrator" and one to a "character." Boxes will contain proportions of balls with distributions that range in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). Because I will be recreating the stimuli on my own, I will use the same colors as in the original paper. The positions of each colored ball may differ slightly, but the proportions/numbers of each color will be identical.
 
 ### Procedure	
-Can quote directly from original article - just put the text in quotations and note that this was followed precisely.  Or, quote directly and just point out exceptions to what was described in the original article.
 Training Trial
 Procedure for the training trial will closely follow that of the original paper: "Adults were shown a short animation that walked them through the setup of the task, in which images of two boxes of balls with inverse proportions were shown being shuffled behind a barrier so the location of each was unknown. Then a hand reached into one of the boxes and picked balls one at a time and placed them into an opaque bowl without revealing the colour of each ball. After the container was filled, the contents were revealed and participants were asked to judge which of the two boxes the sample had been drawn from. The training trial was done with a 72/28 ratio set, and was designed to be an easy discrimination. Failure to choose the correct box was used as an exclusion criterion". 
 The paper does not specify the number of balls drawn during this trial, however participants in the replication will view 11 balls. 8 of them (72%) will be in the majority color and 3 (28%) will be in the minority color in order to directly reflect the distribution of the box being sampled. The short animation video will differ slightly, given that I will be recreating the stimuli, but conceptually, the content will be the same. I will follow the rest of the protocol as closely as possible, however the attention check prompt may differ slightly in wording, given that it was not listed in the section.
@@ -85,7 +78,7 @@ After data collection, I will use a linear mixed effects model to examine partic
 
 Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
 
-The original study was run online via Amazon's Mechanical Turk. This replication will either be run with undergraduates though a university research survey platform or via prolific. The exact procedure should be nearly identical to the original study, with possible modifications to the attention check prompt and the number of samples extracted during the training trials (see Procedure section for more detailed deviations from the original study). Conceptually, all of the information presented to participants should be the same as in the original task, thus it is unlikely that these differences should have an impact on the claims made in the original article. 
+The original study was run online via Amazon's Mechanical Turk. This replication will be run on Prolific. The exact procedure should be nearly identical to the original study, with possible modifications to the attention check prompt and the number of samples extracted during the training trials (see Procedure section for more detailed deviations from the original study). Conceptually, all of the information presented to participants should be the same as in the original task, thus it is unlikely that these differences should have an impact on the claims made in the original article. 
 
 ### Methods Addendum (Post Data Collection)
 
