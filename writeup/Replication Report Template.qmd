@@ -14,31 +14,14 @@ format:
 
 [No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense. 
 
+The current project aims to replicate Experiment 1 from  Pelz et al., 2022. This study broadly investigated whether children and adults intuitively perform a power analysis (i.e., whether people are sensitive to the amount of evidence needed in order to make a particular inference or decision). In order to answer this question, participants were shown 10 pairs of boxes across 10 trials, where each pair contained a different distribution of colored balls. The difficulty of the trials varied from very hard (e.g., boxes containing 51% one color; 49% of another) to very easy (e.g., 95% one color; 5% another). On each trial, participants were shown two boxes, each belonging to a different character. They were asked to enter a number for how many balls should be taken out of the boxes in order for a third party to determine which of the two boxes is being sampled. They measured whether participants adjusted their sampling behavior as distributions became harder/easier to discriminate. Indeed, they find that as distributions became more difficult (i.e., closer to 50/50), adults requested 0.37 ± 0.04 (standard error (s.e.), 95% CI (0.28, 0.45)) more balls for each decreasing proportion. These findings propose that adults adjust their information search based on the relative difficulty of a particular problem.  
 
-My primary research interests revolve around children's metacognition and belief revision. How do the recognize anomolies to their existing beliefs, 
-and how do they acquire a sense of intellectual humility to recognize gaps in their own knowledge? Connected to this idea is knowing just 
-how much information or certainty one may need in order to make a decision or revise an existing belief. This particular experiment provides evidence 
-that both children and adults are able to do this-- they flexibly adjust their responses depending on the difficulty of a problem (i.e., predicting 
-how much information is necessary to come to a decision). This result connects to some of the work I’m currently developing on children’s uncertainty 
-tolerance. Instead of examining whether or not people are sensitive to the amount of information needed, I’m interested in how much uncertainty an 
-individual is willing to have present when committing to a decision. Though this particular result shows a group level sensitivity to conducting an 
-“intuitive power analysis,” it helps to inform my current work on behavior at the individual level. 
-	
-This study broadly investigates whether children and adults can intuitively perform a power analysis (i.e., whether people are sensitive to the 
-amount of evidence needed in order to make a particular inference or decision). In order to answer this question, participants are shown 10 pairs of 
-boxes, each pair containing a different distribution of colored balls. There are 10 separate test trials, each displaying two boxes filled with 
-colored balls with inverse proportions of one another (e.g., 95/5 vs. 5/95). The difficulty of the trials vary from 51/49 to 95/5, with the order 
-randomized for each participant. On each trial, participants are shown two boxes, each belonging to a different character. They must enter a number for how many balls should be taken out of the boxes in order for them to determine which of the two boxes is being sampled. They measure whether participants adjust their sampling behavior as distributions get harder/easier to discriminate. I plan to replicate Experiment 1 from the paper for my replication, and I will use a linear effects model to uncover how participants' sampling decisions relate to the difficulty of each distribution.
-	
-The primary challenge will be to redesign each of the stimuli, as there are 10 separate trials, with 200 visible balls across the two boxes per 
-trial. Each trial has its own color scheme of balls inside, and it will be time consuming to replicate the boxes exactly as they appear in the 
-original paper. The rest of the procedure should be fairly simple to recreate in terms of design.  
+My primary research interests revolve around children's metacognition and belief revision. How do the recognize anomolies to their existing beliefs, and how do they acquire a sense of intellectual humility to recognize gaps in their own knowledge? Related to this idea is knowing just how much information or certainty one may need in order to make a decision or revise an existing belief. This particular experiment provides evidence that both children and adults are able to do this-- they flexibly adjust their information search depending on the difficulty of a problem (predicting how much information is necessary to come to a decision). This result connects to some of the work I’m currently developing on children’s uncertainty tolerance. Instead of examining whether or not people are sensitive to the amount of information needed, I’m interested in how much uncertainty an individual is willing to have present when committing to a decision.Though this particular result shows a group level sensitivity to conducting an “intuitive power analysis,” it helps to inform my current work on behavior at the individual level. 
+
 
 Repository: https://github.com/psyc-201/pelz_2022
 
 Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8bf75fb235c6bac3622d63d/original_paper
-
-
 
 ## Methods
 
@@ -46,88 +29,83 @@ Original Paper: https://github.com/sophiemazor/pelz2022/tree/f8836bf68249a13be8b
 The paper reports using G*Power to conduct a power analysis based on pilot data. They found that in order to get an effect size of 0.4 achieve a power level of 0.9 (90%), they needed 30 adult participants. Because this replication study will be conducted on an online platform, this planned sample size is feasible. 
 
 ### Planned Sample
-The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail the attention check question and must be at least 18 years old in order to participate. There are no other eligibility criteria. 
+The planned sample size is 30 adults. As in the original study, participants will be excluded if they fail the attention check question and must be at least 18 years old in order to participate. There are no other eligibility criteria. The final sample contained 33 adults. 
 
 ### Materials
-All stimuli will be created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1, participants will first see two boxes with inverse proportions of balls (i.e., 72/28, 28/72) in a training trial. There will be ten separate test trials and each will show participants two boxes, one belonging to the "narrator" and one to a "character." Boxes will contain proportions of balls with distributions that range in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). Because I will be recreating the stimuli on my own, I will use the same colors as in the original paper. The positions of each colored ball may differ slightly, but the proportions/numbers of each color will be identical.
+All stimuli were created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1 in Pelz et al., 2022, participants were introduced to the task through a training trial where they saw two boxes with inverse proportions of balls (i.e., 72/28, 28/72) inside. Following the training trial, participants completed ten separate test trials, each  showing participants two boxes, one belonging to the "narrator" and one to a "character." Boxes contained proportions of balls with distributions that ranged in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). All stimuli colors were matched to that of the original study, though the positions of each colored ball differed slightly due to recreating the stimuli.
 
 ### Procedure	
 Training Trial
-Procedure for the training trial will closely follow that of the original paper: "Adults were shown a short animation that walked them through the setup of the task, in which images of two boxes of balls with inverse proportions were shown being shuffled behind a barrier so the location of each was unknown. Then a hand reached into one of the boxes and picked balls one at a time and placed them into an opaque bowl without revealing the colour of each ball. After the container was filled, the contents were revealed and participants were asked to judge which of the two boxes the sample had been drawn from. The training trial was done with a 72/28 ratio set, and was designed to be an easy discrimination. Failure to choose the correct box was used as an exclusion criterion". 
-The paper does not specify the number of balls drawn during this trial, however participants in the replication will view 11 balls. 8 of them (72%) will be in the majority color and 3 (28%) will be in the minority color in order to directly reflect the distribution of the box being sampled. The short animation video will differ slightly, given that I will be recreating the stimuli, but conceptually, the content will be the same. I will follow the rest of the protocol as closely as possible, however the attention check prompt may differ slightly in wording, given that it was not listed in the section.
+Procedure for the training trial closely followed that of the original paper where adults first saw a short animated video with two boxes filled with inverse proportions of black and white balls inside (72/28 and 28/72). Both boxes were hidden behind a single occluder and shuffled around such that the position of each box was unknown to participants. Then, a hand reached into one of the boxes and extracted 11 balls, placing them into an occluded bowl. Participants could not see the color of each ball as they were extracted. After all 11 balls were sampled, the contents of the bowl were revealed (i.e., 8 (72%) white balls and 3 (28%) black ones))). Participants were then asked which of the two boxes had been sampled from. Failure to answer this question correctly was used as exclusion criteria. This animation video differed slightly from the original paper due to recreation of the stimuli. However the conceptual content remained the same.
+
+Catch Trial
+Following the training trial, participants were administered a catch trial where two boxes appeared on the screen. Participants were told to select the box on a particular side of the screen if they were paying attention. Failure to answer this question correctly was also used as exclusion criteria. 
 
 Test Trials
-The procedure for each of the 10 test trials will be identical to the original paper: "Participants were then shown four characters, each with a set of two boxes, to give them a sense of the range of contrasts in the task and were told ‘This time, you will be deciding how many balls I should put in the bowl. For each friend, think about how tricky it will be to figure out which box I am picking from. For some friends you might need more balls to decide which box they are picked from, and for some friends you might need fewer. Try not to ask for more balls than you need.’ Ten sets of boxes each with a new character were presented one at a time, along with a question asking ‘How many balls do you think I need to put in the bowl for you to know whether the balls came from my box or (the current character)’s box?’ Participants simply had to type in the number of samples that they thought they would need to discriminate each pair. The proportions in the test stimuli varied from very easy discriminations (95/5) to very difficult ones (51/49). Adults were not told the specific ratios; they had to estimate the difficulty of the discrimination problem from the visual display. Nor were adults told the exact number of balls in the box. One hundred balls  were visible on the face of the box but the boxes were presented as three-dimensional sketches so, assuming participants thought the boxes were cubes, they might have inferred that there were roughly 1,000 balls in each box. The instructions indicated sampling without replacement and in principle this could be modelled by a hypergeometric distribution (that is, the probability of a coloured ball would change after each draw). However, given the inferred size of the population, sampling with or without replacement would make little difference thus for simplicity, we modelled the probability of drawing a coloured ball as a binomial distribution. Participants were not given any feedback on their responses and the order in which the ten boxes were presented was randomized for each participant."
+Participants were shown another animated video with four characters, each with a pair of boxes to convey the range of proportions that boxes may contain during the task. As in the original paper, participant were told, ‘This time, you will be deciding how many balls I should put in the bowl. For each friend, think about how tricky it will be to figure out which box I am picking from. For some friends you might need more balls to decide which box they are picked from, and for some friends you might need fewer. Try not to ask for more balls than you need.’ Then, participants completed ten separate trials each displaying a pair of boxes along with the prompt, ‘How many balls do you think I need to put in the bowl for you to know whether the balls came from my box or (the current character)’s box?’ Participants then entered the number of samples they thought were necessary to decipher between the two boxes into a text box. The level of difficulty in discriminating between the boxes ranged in difficulty from very easy (95/5 and 5/95) to very difficult (51/49 and 49/51). The order of which each of the ten pairs were presented was randomized for each participant. Critically, adults were not told the specific proportions nor the number of balls in each box, instead they had to estimate the relative proportions and contents by simply looking at the two boxes. Participants did not receive feedback on their answers.
 
 
 ### Reliability and Validity
-The key construct measured in this project is the idea of having an "intuitive power analysis." This is measured by showing participants 10 pairs of boxes, each with different proportions of balls inside. They will measure whether or not participants request more samples for harder distributions and fewer for easier distributions. If this is the case, they can conclude that people are sensitive to the fact that different amounts of data or information is needed depending on the difficulty of a particular problem. The authors do not report any reliability or validity information, and given that this is a novel task with one trial for each distribution, there is not a lot of opportunity to examine how reliable or valid the measure is (e.g., whether effects would hold if participants were given multiple trials for the same distribution, perhaps with different colored balls). The behavioral task is the only method used in the paper. 
+The key construct measured in this project is whether or not adults are capable of computing an "intuitive power analysis." This is measured by showing participants 10 pairs of boxes, each with different proportions of balls inside. We measure whether or not participants request more samples for harder distributions and fewer for easier distributions. If this is the case, we may conclude that adults are sensitive to the idea that different amounts of data or information are needed to solve problems of different difficulties. The authors do not report any reliability or validity information, and given that this is a novel task with one trial for each distribution, there is little opportunity to examine how reliable or valid the measure is (e.g., whether effects would hold if participants were given multiple trials for the same distribution, perhaps with different colored balls). The behavioral task was the only method used in the original paper. 
 
 
 ### Analysis Plan
-
-Can also quote directly, though it is less often spelled out effectively for an analysis strategy section.  The key is to report an analysis strategy that is as close to the original - data cleaning rules, data exclusion rules, covariates, etc. - as possible.  
-
-**Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
-
-I plan to conduct the key analysis from Experiment 1 and I will follow their analysis steps directly. 
-First, they identified a null model, which they reach by "model(ing) an agent who represents all of the possible contents of a sample of a particular size N (for example, in a sample of N = 3 balls, it could contain three white balls, three coloured balls, one white and two coloured balls, or two white and one coloured ball), then weights them on the basis of the likelihood of drawing that particular sample from the population. We then use a cumulative distribution function to model the sampling process, with N being the total number of samples drawn (restricted to even-numbered samples using a ceiling operator), x representing the number of samples that are coloured and p representing the probability that a given sample is a particular colour (that is, the probability associated with a given box). When most of the possible samples of a given size point to one of the two options, then participants should decide the sample is big enough; if not, then participants should request a larger sample."
-After data collection, I will use a linear mixed effects model to examine participants' sampling behavior as it relates to distribution difficulty. As listed in the paper, I will make the "proportion of coloured balls a fixed effect, with participant as a random intercept. P values were obtained by likelihood ratio tests comparing the full model with a null model that left out the effect of proportion."
+I conducted one of the key analyses from Experiment 1. First, I used a linear mixed effects model to examine participants' sampling behavior across the ten distributions. As in the original paper, the proportions of colored balls was a fixed effect, with each participant as a random intercept. Then, I identified a null model that left out the effect of proportion. Using a likelihood ratio test (Chi-Squared), I compared the two models against one another to examine which model best fit the data.
 
 ### Differences from Original Study
 
 Explicitly describe known differences in sample, setting, procedure, and analysis plan from original study.  The goal, of course, is to minimize those differences, but differences will inevitably occur.  Also, note whether such differences are anticipated to make a difference based on claims in the original article or subsequent published research on the conditions for obtaining the effect.
 
-The original study was run online via Amazon's Mechanical Turk. This replication will be run on Prolific. The exact procedure should be nearly identical to the original study, with possible modifications to the attention check prompt and the number of samples extracted during the training trials (see Procedure section for more detailed deviations from the original study). Conceptually, all of the information presented to participants should be the same as in the original task, thus it is unlikely that these differences should have an impact on the claims made in the original article. 
+The original study was run online via Amazon's Mechanical Turk. This replication was run on Prolific. The exact procedure was nearly identical to the original study, with some modifications to the attention check prompt and the number of samples extracted during the training trials (see Procedure section for more detailed deviations from the original study). Conceptually, all of the information presented to participants was the same as in the original task, thus it is unlikely that these differences should have an impact on the claims made in the original article.
 
 ### Methods Addendum (Post Data Collection)
 
 You can comment this section out prior to final report with data collection.
 
 #### Actual Sample
-  Sample size, demographics, data exclusions based on rules spelled out in analysis plan
+47 adults wererecruited via Prolific. 13 participants were excluded as they failed to correctly answer the attention check question in the training trial. One additional participant was excluded due to a technical error, resulting in a final sample of 33 adults over the age of 18. 
 
 #### Differences from pre-data collection methods plan
-  Any differences from what was described as the original plan, or “none”.
+none
 
 
 ## Results
+The original paper reports, "Adults were sensitive to the difficulty of the discrimination problem and asked for more balls as the discrimination problems got more difficult (χ2(1) = 66.19, P < 0.001), requesting 0.37 ± 0.04 (standard error (s.e.), 95% CI (0.28, 0.45)) more balls for each decreasing proportion"
+
+My analysis finds that adults were sensitive to the difficulty of the discrimination problem, asking for more balls as the discrimination problems got more difficult (χ2(1) = 111.61, P < 0.001), requesting 0.56 ± 0.04 (standard error (s.e.), 95% CI (0.46, 0.65)) more balls for each decreasing proportion.
 
 
 ### Data preparation
 
 Data preparation following the analysis plan.
-Because each of my measures will be identical to that of the original experiment, my data preparation will be the same as they did. Step one of my data preparation will be to account for exclusions. There is one attention check at the end of the familiarization trial. The original experiment excluded participants if they failed this question, and I will do the same. The key variables that will be used in the linear mixed effects model will be the exact answers participants answer to each of the ten test trials (i.e., a numerical value for the number of samples participants think should be drawn). In order to prepare the data, I will make the dataframe into long form, such that participants have multiple rows, one for each individual trial. 
+Because each measure was identical to that of the original experiment, data preparation followed similar steps. All participants who failed the attention check after the training trial (N = 13) and catch trial (N = 0) were excluded. The key variables used in the linear mixed effects model were the exact numerical answers participants provided for each of the ten test trials (i.e., the number of samples participants think should be drawn). 
 	
 ```{r include=F}
-### Data Preparation
-#### Load Relevant Libraries and Functions
+# analysis script for Pelz Replication
+#Sophie Mazor
+
 library(ggplot2)
 library(lmerTest)
 library(tidyr)
 library(tidyverse)
 library(dplyr)
 
-#### Import data
+data = read.csv('Pelz_Replication_Data.csv')
 
-pilot_data = read.csv('Pelz_PilotB_Data.csv')
-
-n_total <- pilot_data %>%
+n_total <- data %>%
   distinct(official_id) %>%
   nrow()
 
 print(n_total)
 
-#### Data exclusion / filtering
 # make a new df with only the participants who passed the attention check and catch trial
-final_data_set <- pilot_data %>%
-  filter(pilot_data$attention_check == "72White", pilot_data$catch_trial == 'correct') #filter participants who get it incorrect
+final_data_set <- data %>%
+  filter(data$attention_check == "72White", data$catch_trial == 'correct') #filter participants who get it incorrect
 
 failed_attention <- n_total - n_distinct(final_data_set$official_id) #tell me how many participants failed the attention checks
 
 print(failed_attention)
 
-#### Prepare data for analysis - create columns etc.
 #extract the relevant columns from the main df
 filter_model_data <- final_data_set[, c('official_id', 'trial_name', 'samples_requested')]
 
@@ -158,27 +136,31 @@ pastel_colors <- scales::hue_pal(l = 75, c = 60)(length(unique(summary_df$trial_
 summary_df$trial_name <- factor(summary_df$trial_name, levels = summary_df$trial_name)
 
 ggplot(filter_model_data, aes(x = trial_label, y = samples_requested, fill = trial_name)) +
-  geom_boxplot(width = 0.6, outlier.shape = NA, color = "black") +
+  geom_boxplot(
+    width = 0.6,
+    outlier.shape = 16,   
+    outlier.size = 2,
+    outlier.color = "grey40",
+    outlier.alpha = 0.7,
+    color = "black") +
   stat_summary(fun = mean, geom = "point", shape = 18, color = "darkred", size = 3) +
   scale_fill_manual(values = pastel_colors) +
   scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25)) +
   theme_minimal(base_size = 14) +
   theme(
     legend.position = "none",
-    axis.text.x = element_text(hjust = .1)
-  ) +
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.text.x = element_text(hjust = .1),
+    axis.ticks = element_line(color = "black", linewidth = 0.5),
+    axis.ticks.length = unit(3, "pt"),
+  panel.border = element_rect(color = "black", fill = NA, linewidth = 1)) +
   labs(
-    x = "Number of Colored Balls",
-    y = "Number of Samples Requested",
-    title = "Samples Requested per Distribution"
+    x = "Proportion of Colored Balls",
+    y = "Number of Balls",
   )
 
 #linear mixed effects model to assess whether participants' sampling differs across trials
-
-#run a linear mixed effects model - trial distributions are fixed effects. Participants are random intercepts
-mixed_model <- lmer(samples_requested ~ trial_name + (1 | official_id), data = filter_model_data)
-summary(mixed_model)
-
 
 #compare null model to linear mixed effects model
 
@@ -220,25 +202,24 @@ summary(mixed_model)
 ```
 
 ### Confirmatory analysis
+To examine whether or not participants' sampling behaviors differs as a result of distribution difficulty, I used a linear mixed effects model with trial proportions as a fixed effect and participants as a random intercept. I then used a likelihood ratio test to compare the full model to a null model that left out the effect of proportion difficulty to assess which model best fit the dataset. The graph for Experiment 1 was also replicated, as shown below.
 
-The analyses as specified in the analysis plan.  
-I will run a linear mixed effects model with trial proportions as a fixed effect and participants as a random intercept. I will then use likelihood ratio tests, comparing the LMM to the null model (as specified above in the analysis plan) to assess significance. This statistical output will directly examine whether or not participants' sampling behaviors differ with distribution difficulty, so I believe it to be a well-suited analysis for the purposes of this replication. I will also aim to recreate the original graph for this analysis as well. 
-
-*Side-by-side graph with original graph is ideal here*
-![Original Paper's Graph](https://github.com/sophiemazor/pelz_2022/blob/main/Pelz_Original%20Graph.png)
-
-
+![Original Paper's Graph](https://raw.githubusercontent.com/psyc-201/pelz_2022/main/Pelz_Original%20Graph.png)
+![Replication Graph](https://raw.githubusercontent.com/psyc-201/pelz_2022/main/Pelz Replication Graph.png)
 
 ### Exploratory analyses
-
-Any follow-up analyses desired (not required).  
+none
 
 ## Discussion
 
 ### Summary of Replication Attempt
+The primary result indeed replicated the original result. The full model which included a fixed effect of proportion difficulty was a significantly better fit for the data compared to the null model. As in the original paper, this difference was highly significant (p < 0.001). Additionally, the original paper finds that participants requested 0.37 ± 0.04 (standard error (s.e.), 95% CI (0.28, 0.45)) more balls for each decreasing proportion. I find a similar effect-- participants requested 0.56 ± 0.04 (s.e.), 95% CI (0.46, 0.65)) more balls for each decreasing proportion. As seen in the graph visualizations, there were more outliers in the replication dataset, compared to the original paper. Overall, the results replicate the key finding in the paper.
 
-Open the discussion section with a paragraph summarizing the primary result from the confirmatory analysis and the assessment of whether it replicated, partially replicated, or failed to replicate the original result.  
+These findings hold key implications about adults' information search. Not only are adults sensitive to task difficulty (e.g., Chevalier 2018; Ganesan & Steinbeis, 2021; Kool et al., 2010; Serko et al., 2024; Wang & Bonawitz 2023), they use task difficulty as a metric to adapt how much information they seek out to solve a particular problem. Adults do not sample consistent amounts of evidence for all problems they encounter, rather, they tailor their information search to efficiently solve tasks. 
+
 
 ### Commentary
 
 Add open-ended commentary (if any) reflecting (a) insights from follow-up exploratory analysis, (b) assessment of the meaning of the replication (or not) - e.g., for a failure to replicate, are the differences between original and present study ones that definitely, plausibly, or are unlikely to have been moderators of the result, and (c) discussion of any objections or challenges raised by the current and original authors about the replication attempt.  None of these need to be long.
+
+This replication reinforces the findings in the original paper
