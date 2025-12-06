@@ -70,7 +70,7 @@ My analysis finds that adults were also sensitive to the difficulty of the discr
 ### Data preparation
 
 Data preparation following the analysis plan.
-Because each measure was identical to that of the original experiment, data preparation followed similar steps. All participants who failed the attention check after the training trial (N = 13) and catch trial (N = 0) were excluded. The key variables used in the linear mixed effects model were the exact numerical answers participants provided for each of the ten test trials (i.e., the number of samples participants think should be drawn). 
+Because each measure was identical to that of the original experiment, data preparation followed similar steps. All participants who failed the attention check after the training trial (N = 13) and catch trial (N = 0) were excluded. The key variables used in the linear mixed effects model were the exact numerical answers participants provided for each of the ten test trials (i.e., the number of samples participants think should be drawn).
 	
 ```{r include=F}
 # analysis script for Pelz Replication
@@ -103,8 +103,6 @@ filter_model_data <- final_data_set[, c('official_id', 'trial_name', 'samples_re
 
 #treat trial name as a factor
 filter_model_data$trial_name <- factor(filter_model_data$trial_name)
-
-View(filter_model_data)
 
 # take away underscore in trial names and just give numeric proportion 
 filter_model_data$proportion <- as.numeric(sub("_.*", "", filter_model_data$trial_name)) / 100
@@ -177,11 +175,6 @@ p_value <- pchisq(chi_squared, df = 1, lower.tail = FALSE)
 
 print(chi_squared)
 print(p_value)
-
-# get coefficient and standard error
-coef_table <- coef(summary(mixed_model))
-difficulty_coef <- coef_table["difficulty", "estimate"]
-difficulty_se <- coef_table["difficulty", "standard error"]
 
 
 # calculate confidence intervals (95%)
