@@ -67,10 +67,6 @@ The original study was run online via Amazon's Mechanical Turk. This replication
 none
 
 ## Results
-The original paper reports, "Adults were sensitive to the difficulty of the discrimination problem and asked for more balls as the discrimination problems got more difficult (χ2(1) = 66.19, P < 0.001), requesting 0.37 ± 0.04 (standard error (s.e.), 95% CI (0.28, 0.45)) more balls for each decreasing proportion"
-
-My analysis finds that adults were also sensitive to the difficulty of the discrimination problem, asking for more balls as the discrimination problems got more difficult (χ2(1) = 111.61, P < 0.001), requesting 0.56 ± 0.04 (standard error (s.e.), 95% CI (0.46, 0.65)) more balls for each decreasing proportion.
-
 
 ### Data preparation
 
@@ -192,6 +188,8 @@ summary(mixed_model)
 
 ### Confirmatory analysis
 To examine whether or not participants' sampling behaviors differs as a result of distribution difficulty, I used a linear mixed effects model with trial proportions as a fixed effect and participants as a random intercept. I then used a likelihood ratio test to compare the full model to a null model that left out the effect of proportion difficulty to assess which model best fit the dataset. The graph for Experiment 1 was also replicated, as shown below.
+
+My analysis finds that adults were sensitive to the difficulty of the discrimination problem, asking for more balls as the discrimination problems got more difficult (χ2(1) = 111.61, P < 0.001), requesting 0.56 ± 0.04 (standard error (s.e.), 95% CI (0.46, 0.65)) more balls for each decreasing proportion.
 
 ### Pelz et al., 2022 Graph
 
