@@ -33,13 +33,16 @@ The planned sample size is 30 adults. As in the original study, participants wil
 All stimuli were created digitally for the experiment using R studio and JsPsych. Following the design of Experiment 1 in Pelz et al., 2022, participants were introduced to the task through a training trial where they saw two boxes with inverse proportions of balls (i.e., 72/28, 28/72) inside. Following the training trial, participants completed ten separate test trials, each  showing participants two boxes, one belonging to the "narrator" and one to a "character." Boxes contained proportions of balls with distributions that ranged in difficulty to discriminate between (i.e., 95/5, 90/10, 85/15, 80/20, 75/25, 70/30, 65/35, 60/40, 55/45, 51/49). All stimuli colors were matched to that of the original study, though the positions of each colored ball differed slightly due to recreating the stimuli.
 
 ### Procedure	
-Training Trial
+#### Training Trial
+
 Procedure for the training trial closely followed that of the original paper where adults first saw a short animated video with two boxes filled with inverse proportions of black and white balls inside (72/28 and 28/72). Both boxes were hidden behind a single occluder and shuffled around such that the position of each box was unknown to participants. Then, a hand reached into one of the boxes and extracted 11 balls, placing them into an occluded bowl. Participants could not see the color of each ball as they were extracted. After all 11 balls were sampled, the contents of the bowl were revealed (i.e., 8 (72%) white balls and 3 (28%) black ones))). Participants were then asked which of the two boxes had been sampled from. Failure to answer this attention check question correctly was used as exclusion criteria. This animation video differed slightly from the original paper due to recreation of the stimuli. However the conceptual content remained the same.
 
-Catch Trial
+#### Catch Trial
+
 Following the training trial, participants were administered a catch trial where two boxes appeared on the screen. Participants were told to select the box on a particular side of the screen if they were paying attention. Failure to answer this question correctly was also used as exclusion criteria. 
 
-Test Trials
+#### Test Trials
+
 Participants were shown another animated video with four characters, each with a pair of boxes to convey the range of proportions that boxes may contain during the task. As in the original paper, participant were told, ‘This time, you will be deciding how many balls I should put in the bowl. For each friend, think about how tricky it will be to figure out which box I am picking from. For some friends you might need more balls to decide which box they are picked from, and for some friends you might need fewer. Try not to ask for more balls than you need.’ Then, participants completed ten separate trials each displaying a pair of boxes along with the prompt, ‘How many balls do you think I need to put in the bowl for you to know whether the balls came from my box or (the current character)’s box?’ Participants then entered the number of samples they thought were necessary to decipher between the two boxes into a text box. The level of difficulty in discriminating between the boxes ranged in difficulty from very easy (95/5 and 5/95) to very difficult (51/49 and 49/51). The order of which each of the ten pairs were presented was randomized for each participant. Critically, adults were not told the specific proportions nor the number of balls in each box. Instead, they had to estimate the relative proportions and contents by simply looking at the two boxes. Participants did not receive feedback on their answers.
 
 
@@ -70,9 +73,9 @@ My analysis finds that adults were also sensitive to the difficulty of the discr
 ### Data preparation
 
 Data preparation following the analysis plan.
-Because each measure was identical to that of the original experiment, data preparation followed similar steps. All participants who failed the attention check after the training trial (N = 13) and catch trial (N = 0) were excluded. The key variables used in the linear mixed effects model were the exact numerical answers participants provided for each of the ten test trials (i.e., the number of samples participants think should be drawn).
+Because each measure was identical to that of the original experiment, data preparation followed similar steps. All participants who failed the attention check after the training trial (N = 13) and catch trial (N = 0) were excluded. The key variables used in the linear mixed effects model were the exact numerical answers participants provided for each of the ten test trials (i.e., the number of samples participants think should be drawn). 
 	
-```{r include=F}
+```{r}
 # analysis script for Pelz Replication
 #Sophie Mazor
 
